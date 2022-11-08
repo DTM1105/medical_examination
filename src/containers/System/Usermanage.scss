@@ -1,0 +1,90 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .btn-edit {
+    font-size: 30px;
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+    &:hover{
+        background-color: transparent !important;
+    }
+}
+    .btn-delete {
+        font-size: 27px;
+        width: 50px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: red;
+        &:hover{
+            background-color: transparent !important;
+        }
+    }
+    .add-user {
+      
+      .btn-add {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-add_icon {
+        display: block;
+        margin-right: 5px;
+      }
+    }
+
+.modal-user-container {
+  border-radius: 20px;
+  .modal-header {
+    button {
+      background-color: transparent;
+      font-size: 26px;
+      color: white;
+      border: none;
+    }
+  }
+  .modal-user-body {
+    display: flex;
+    gap : 10px;
+    flex-wrap: wrap;
+      .input-container{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        &.max-width-input {
+          width: 100%;
+        }
+        input {
+          border: 1px solid gray;
+          border-radius: 3px;
+          height: 30px;
+          outline: none;
+          padding: 0 10px;
+        }
+      }
+  }
+}
